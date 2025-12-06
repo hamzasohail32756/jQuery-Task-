@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Changer</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body style="text-align: center; margin-top: 50px;">
+    <h2>Random Color Changer</h2>
+    <button style="width: 100px; height: 25px; border-radius: 5px;" id="change">Change Color</button>
+
+    <script>
+        $("#change").click(function () {
+            let color = "#" + Math.floor(Math.random() * 16777215).toString(16);
+            $("body").css("background-color", color);
+        });
+    </script>
+</body>
+</html>
